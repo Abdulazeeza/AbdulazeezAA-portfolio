@@ -1,0 +1,89 @@
+#connect .main_section{
+    padding: 50px 100px;
+    background: $tetiary-color;
+    color: $primary-color;
+    h1{
+        color:$primary-color;
+    }
+    p{
+        font-size: 20px;
+        color: $primary-color;
+    }
+    .contact{
+        a{
+            color: $secondary-color !important;
+        }
+    }
+    form{
+        width: 50%;
+        padding-top: 20px;
+        div{
+            display: flex;
+            justify-content: space-between;
+            .detail{
+                width: 45%;
+                height: 50px;
+                margin-bottom: 20px;
+                padding-left: 5px;
+            }
+        }
+        .subject{
+            width: 100%;
+            margin-bottom: 20px;
+            height: 50px;
+            padding-left: 5px;
+        }
+        textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            height: 140px;
+            padding-left: 5px;
+        }
+        button{
+            width: 222px;
+            height: 50px;
+            border-radius: 5px;
+            border:1px solid $secondary-color;
+            color:$secondary-color;
+            background: $tetiary-color;
+            font-size: 20px;
+        }
+    }
+}
+@media(max-width:1000px){
+    #connect .main_section{
+        form{
+            width: 70%;
+        }
+    }
+}
+@media(max-width:860px){
+    #connect .main_section{
+        padding: 50px;
+        form{
+            width: 90%;
+        }
+    }
+}
+@media(max-width:550px){
+    #connect .main_section{
+        padding: 30px 7%;
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+        form{
+            width: 100%;
+            div{
+                display: grid;
+                width: 100%;
+                justify-content: normal;
+                .detail{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

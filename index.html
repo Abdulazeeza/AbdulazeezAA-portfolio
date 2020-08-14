@@ -14,6 +14,7 @@
 <title>AbdulazeezAA </title>
 </head>
 <body id="home">
+  <!--header section -->
   <header>
     <a class="header_logo"><img src="assets/img/Abdulazeez_name.svg"/></a>
     <nav>
@@ -21,15 +22,22 @@
       <a>Projects</a>
       <a href="connect.html">Connect</a>
     </nav>
-    <a class="menu"><img src="assets/img/menu.svg"/></a>
+    <a class="menu" onclick="toggle_menu()"><img src="assets/img/menu.svg"/></a>
   </header>
+  <!--mobile navbar-->
+  <div class="mobile_nav">
+    <a class="active">Home</a>
+    <a>Project</a>
+    <a href="connect.html">Connect</a>
+  </div>
+  <!--main section -->
   <div class="main_section">
      <div class="intro_section">
       <div class="intro_section__1">
         <h3>Hello world!<img src="assets/img/hello.svg"/></h3>
         <h1>I'm Abdulazeez Abdulazeez<br>I'm a Frontend Web Developer.</h1>
         <p>I build functional and appealing web applications to aid user experience, i believe continuous learning would 
-        keep you up to dat, diverse knowledge would make you see the impossible as possible and putting your hands 
+        keep you up to date, diverse knowledge would make you see the impossible as possible and putting your hands 
         to work would make a difference.</p>
       </div>
       <div class="intro_section__2"><img src="assets/img/profile.svg"/></div>
@@ -115,6 +123,7 @@
     </div>
   </div>
 
+  <!--footer section -->
   <footer>
     <p class="name">Abdulazeez Abdulazeez</p>
     <div class="social_links">
@@ -148,5 +157,6 @@
       },
     });
   </script>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>

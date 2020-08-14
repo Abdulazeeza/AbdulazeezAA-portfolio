@@ -13,20 +13,48 @@
 <link rel="stylesheet" href="assets/css/style.min.css">
 <title>AbdulazeezAA </title>
 </head>
-<body id="home">
+<body id="connect">
+  <!-- header section -->
   <header>
-    <a><img src="assets/img/Abdulazeez_name.svg"/></a>
+    <a class="header_logo"><img src="assets/img/Abdulazeez_name.svg"/></a>
     <nav>
       <a href="index.html">Home</a>
       <a>Projects</a>
-      <a  class="active">Connect</a>
+      <a class="active">Connect</a>
     </nav>
-    <a class="menu"><img src="assets/img/menu.svg"/></a>
+    <a class="menu" onclick="toggle_menu()"><img src="assets/img/menu.svg"/></a>
   </header>
-    
+  <!-- mobile navbar -->
+  <div class="mobile_nav">
+    <a href="index.html">Home</a>
+    <a>Project</a>
+    <a class="active">Connect</a>
+  </div>
+  
+  <!-- main section -->
+  <div class="main_section">
+    <h1>Lets connect</h1>
+    <p>I'm interested in freelance and job opportunities.<br>You can send a message or contact me via:</p>
+    <p class="contact"><a>Email</a> abdulazeeza180@gmai.com</p>
+    <p class="contact"><a>Phone Number</a> +2349013289338</p>
+    <form>
+      <div>
+      <input class="detail" type="name" placeholder="Name"/>
+      <input class="detail" type="email" placeholder="Email"/></div>
+      <input class="subject" type="text" placeholder="Subject"/>
+      <textarea placeholder="Message"></textarea>
+      <button>Send</button>
+    </form>
+  </div>
+
+  <!-- footer section -->
   <footer>
-    <p>Abdulazeez Abdulazeez</p>
-    <div class="social_links"><img src="assets/img/twitter.svg"/><img src="assets/img/linkedin.svg"/><img src="assets/img/github.svg"/></div>
+    <p class="name">Abdulazeez Abdulazeez</p>
+    <div class="social_links">
+      <img src="assets/img/twitter.svg" onclick="window.open('https://twitter.com/Abdulazeeza180','_blank')"/>
+      <img src="assets/img/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/abdulazeez-abdulazeez-219754171/', '_blank')"/>
+      <img src="assets/img/github.svg" onclick="window.open('https://github.com/Abdulazeeza', '_blank')"/>
+    </div>
     <p>All rights reserved</p>
   </footer>
 
@@ -35,5 +63,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/nav.js"></script>
 </body>
 </html>
