@@ -1,53 +1,152 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-	text-align:center;
-}
-p {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 0px;
-  color:blue;
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.min.css">
+<title>AbdulazeezAA </title>
 </head>
-<body>
-<h1>In development, would be ready in:</h1>
-<p id="demo"></p>
+<body id="home">
+  <header>
+    <a class="header_logo"><img src="assets/img/Abdulazeez_name.svg"/></a>
+    <nav>
+      <a class="active">Home</a>
+      <a>Projects</a>
+      <a href="connect.html">Connect</a>
+    </nav>
+    <a class="menu"><img src="assets/img/menu.svg"/></a>
+  </header>
+  <div class="main_section">
+     <div class="intro_section">
+      <div class="intro_section__1">
+        <h3>Hello world!<img src="assets/img/hello.svg"/></h3>
+        <h1>I'm Abdulazeez Abdulazeez<br>I'm a Frontend Web Developer.</h1>
+        <p>I build functional and appealing web applications to aid user experience, i believe continuous learning would 
+        keep you up to dat, diverse knowledge would make you see the impossible as possible and putting your hands 
+        to work would make a difference.</p>
+      </div>
+      <div class="intro_section__2"><img src="assets/img/profile.svg"/></div>
+    </div>
+    <div class="mycv_section">
+      <p>Check out <a>my CV</a> or go straight to <a>my works</a></p>
+      <div class="social_links">
+        <img src="assets/img/twitter.svg" onclick="window.open('https://twitter.com/Abdulazeeza180','_blank')"/>
+        <img src="assets/img/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/abdulazeez-abdulazeez-219754171/', '_blank')"/>
+        <img src="assets/img/github.svg" onclick="window.open('https://github.com/Abdulazeeza', '_blank')"/>
+        <a>Get in touch</a>
+      </div>
+    </div>
+    <div class="skill_section">
+      <h1>My Skillset</h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/img/html.svg"/><h3>HTML<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/css.svg"/><h3>CSS<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/javascript.svg"/><h3>Javascript<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/bootstrap.svg"/><h3>Bootstrap<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/sass.svg"/><h3>Sass<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/react.svg"/><h3>React.js<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/vue.svg"/><h3>Vue.js<h3/></div>
+          <div class="swiper-slide"><img src="assets/img/python.svg"/><h3>Python<h3/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="mywork_section">
+      <h1>Check out some of my works</h2>
+      <div class="work_container">
+        <div class="project">
+          <h3>Wi-share</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A mobile's app landing page</p>
+          <button onclick="window.open('https://wi-share.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project"><h3>MicroApi</h3>
+          <p>HTML + Sass + Javascript</p>
+          <p class="description">A platform that provides micro services</p>
+          <button onclick="window.open('https://microapi.dev/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project"><h3>Ideaco</h3>
+          <p>HTML + Sass + Javascript + Vue.js</p>
+          <p class="description">A platform that allows an organisation to manage their ideas effectively</p>
+          <button onclick="window.open('https://idea-fe.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project">
+          <h3>Arcade Game</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A fun to play game</p>
+          <button onclick="window.open('https://herro-game.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project">
+          <h3>Envato</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A theme for a dentist website</p>
+          <button onclick="window.open('http://dentohome.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project">
+          <h3>Memory Game</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A game that helps increase the retention of a person</p>
+          <button onclick="window.open('https://memory-game-aa.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project">
+          <h3>PixelArt Maker</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A plaform for creating Artistic paintings</p>
+          <button onclick="window.open('https://pixelart-make-aa.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+        <div class="project">
+          <h3>Chatbot</h3>
+          <p>HTML + CSS + Javascript</p>
+          <p class="description">A chatbot that helps aid customer services</p>
+          <button onclick="window.open('https://chatbot-anita.netlify.app/','_blank')"><li></li>LIVE</button>
+        </div>
+      </div>
+      <h1>Lets form an alliance that makes a difference</h1>
+      <p class="get_in_touch">I'm interested in freelance or job opportunities. If you have any questions or need assistance you can <a>get in touch.</a></p>
+    </div>
+  </div>
 
+  <footer>
+    <p class="name">Abdulazeez Abdulazeez</p>
+    <div class="social_links">
+      <img src="assets/img/twitter.svg" onclick="window.open('https://twitter.com/Abdulazeeza180','_blank')"/>
+      <img src="assets/img/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/abdulazeez-abdulazeez-219754171/', '_blank')"/>
+      <img src="assets/img/github.svg" onclick="window.open('https://github.com/Abdulazeeza', '_blank')"/>
+    </div>
+    <p>All rights reserved</p>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Aug 15, 2020 18:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>
