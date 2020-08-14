@@ -46,9 +46,6 @@ header{
     .active{
         color: #1F5AF5 !important;
     }
-    &--active{
-        right: 0%;
-    }
 }
 #home .main_section{
     padding: 0px 100px;
@@ -168,17 +165,19 @@ header{
                     margin-top:30px;
                     font-size: 20px;
                 }
-                button{
+                .live{
                     position: absolute;
                     bottom: 30px;
                     background: #FB4A59;
                     outline: none;
                     border:none;
                     width:60px;
+                    padding-left: 4px;
                     font-weight: bold;
                     letter-spacing: 0.07rem;
                     color: $primary-color !important;
                     display: flex;
+                    cursor: pointer;
                     align-items: center;
                     a{
                         list-style: none;
@@ -252,6 +251,9 @@ footer{
             display: block;
             cursor: pointer;
         }
+    }
+    .mobile_nav--active{
+        right: 0%;
     }
     #home .main_section{
         .intro_section{
