@@ -351,6 +351,9 @@ footer{
             }
             .work_container .project{
                 height: 250px;
+                &:hover{
+                    transform:scale(1);
+                }
                 h3{
                     font-size: 20px;
                 }
