@@ -19,7 +19,7 @@
     <a class="header_logo"><img src="assets/img/Abdulazeez_name.svg"/></a>
     <nav>
       <a class="active">Home</a>
-      <a>Projects</a>
+      <a onclick="scrollToTop() ">Projects</a>
       <a href="connect.html">Connect</a>
     </nav>
     <a class="menu" onclick="toggle_menu()"><img src="assets/img/menu.svg"/></a>
@@ -43,7 +43,7 @@
       <div class="intro_section__2"><img src="assets/img/profile.svg"/></div>
     </div>
     <div class="mycv_section">
-      <p>Check out <a>my CV</a> or go straight to <a>my works</a></p>
+      <p>Check out <a>my Resume</a> or go straight to <a onclick="scrollToTop()">my Works</a></p>
       <div class="social_links">
         <img src="assets/img/twitter.svg" onclick="window.open('https://twitter.com/Abdulazeeza180','_blank')"/>
         <img src="assets/img/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/abdulazeez-abdulazeez-219754171/', '_blank')"/>
@@ -156,6 +156,9 @@
         el: '.swiper-pagination',
       },
     });
+    function scrollToTop() {
+      document.querySelector('.mywork_section').scrollIntoView(true); // Top
+    }
   </script>
   <script src="assets/js/nav.js"></script>
 </body>
