@@ -1,0 +1,37 @@
+//set custom fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'gilroyregular';
+  src: url('../fonts/gilroy-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//set default font 
+$default-font: 'gilroyregular';
+*{
+  font-family: $default-font;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+//theme colors
+$primary-color: #ffffff;
+$secondary-color: #D090E0;
+$tetiary-color: #030113;
+
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+/* Track */
+::-webkit-scrollbar-track {
+border-radius: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $secondary-color;
+border-radius: 8px;
+}
