@@ -1,3 +1,4 @@
+/* connect page main section styling */
 #connect .main_section{
     padding: 50px 100px;
     background: $tetiary-color;
@@ -21,7 +22,7 @@
             display: flex;
             justify-content: space-between;
             .detail{
-                width: 45%;
+                width: 47%;
                 height: 50px;
                 margin-bottom: 20px;
                 padding-left: 5px;
@@ -50,6 +51,7 @@
         }
     }
 }
+/*make some changes at max width screen 1000px */
 @media(max-width:1000px){
     #connect .main_section{
         form{
@@ -57,6 +59,7 @@
         }
     }
 }
+/*make some changes at max width screen 860px */
 @media(max-width:860px){
     #connect .main_section{
         padding: 50px;
@@ -65,6 +68,7 @@
         }
     }
 }
+/*make some changes at max width screen 550px */
 @media(max-width:550px){
     #connect .main_section{
         padding: 30px 7%;
