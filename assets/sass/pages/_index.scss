@@ -96,6 +96,8 @@ header{
         /*socail link*/
         .social_links{
             margin:50px 0px;
+            display: flex;
+            align-items: center;
             img{
                 margin-right: 25px;
                 transition: 0.5s ease;
@@ -107,7 +109,7 @@ header{
             a{
                 font-size:20px;
                 color: $secondary-color !important;
-                margin-left: 30px;
+                margin-left: 10px;
                 cursor: pointer;
                 &:hover{
                     color:#1F5AF5 !important;
@@ -273,6 +275,7 @@ footer{
             padding: 50px 0px 25px 0px;
             &__1{
                 width: 100%;
+                padding-bottom: 20px;
             }
             &__2{
                 width: 100%;
