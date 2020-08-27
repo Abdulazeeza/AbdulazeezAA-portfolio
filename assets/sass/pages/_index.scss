@@ -474,6 +474,26 @@ footer{
                     width: 20px;
                 }
             }
+            .experience_section, .education_section,.achievement_section{
+                h3{
+                    font-size: 18px;
+                }
+                ul {
+                    li{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .achievement_section{
+                h3{
+                    font-size: 18px;
+                }
+                .achievement{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
     footer{
