@@ -39,14 +39,14 @@
         <h3>Hello world!<img src="assets/img/hello.svg"/></h3>
         <h1>I'm Abdulazeez Abdulazeez<br>I'm a Frontend Developer.</h1>
         <p>I build functional and appealing web applications to aid user experience, i believe continuous learning would 
-        keep you up to date, diverse knowledge would make you see the impossible as possible and putting your hands 
+        keep you up to date, diverse knowledge would make you see the impossible is possible and putting your hands 
         to work would make a difference.</p>
       </div>
       <div class="intro_section__2"><img src="assets/img/profile.svg"/></div>
     </div>
     <!--resume and social links section -->
     <div class="mycv_section">
-      <p>Check out <a>my Resume</a> or go straight to <a onclick="scrollToTop()">my Works</a></p>
+      <p>Check out <a onclick="open_resume()">my Resume</a> or go straight to <a onclick="scrollToTop()">my Works</a></p>
       <div class="social_links">
         <img src="assets/img/twitter.svg" onclick="window.open('https://twitter.com/Abdulazeeza180','_blank')"/>
         <img src="assets/img/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/abdulazeez-abdulazeez-219754171/', '_blank')"/>
@@ -54,88 +54,197 @@
         <a href="connect.html">Get in touch</a>
       </div>
     </div>
-    <!--section that shows my skillset-->
-    <div class="skill_section">
-      <h1>My Skillset</h1>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="assets/img/html.svg"/><h3>HTML<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/css.svg"/><h3>CSS<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/bootstrap.svg"/><h3>Bootstrap<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/sass.svg"/><h3>Sass<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/javascript.svg"/><h3>Javascript<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/jquery.svg"/><h3>Jquery<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/react.svg"/><h3>React.js<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/vue.svg"/><h3>Vue.js<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/python.svg"/><h3>Python<h3/></div>
-          <div class="swiper-slide"><img src="assets/img/github_skill.svg"/><h3>Git<h3/></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    <!--My work section -->
-    <div class="mywork_section">
-      <h1>Check out some of my works</h2>
-      <div class="work_container">
-        <!--project -->
-        <div class="project">
-          <h3>Wi-share</h3>
-          <p>HTML + CSS + Javascript</p>
-          <p class="description">A mobile's app landing page</p>
-          <div class="live" onclick="window.open('https://wi-share.netlify.app/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project"><h3>MicroApi</h3>
-          <p>HTML + Sass + Javascript</p>
-          <p class="description">A platform that provides micro services</p>
-          <div class="live" onclick="window.open('https://microapi.dev/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project"><h3>Ideaco</h3>
-          <p>HTML + Sass + Javascript + Vue.js</p>
-          <p class="description">A platform that allows an organisation to manage their ideas effectively</p>
-          <div class="live" onclick="window.open('http://idea-co.herokuapp.com/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project">
-          <h3>Arcade Game</h3>
-          <p>HTML + CSS + Javascript</p>
-          <p class="description">A fun to play game</p>
-          <div class="live" onclick="window.open('https://herro-game.netlify.app/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project">
-          <h3>Envato</h3>
-          <p>HTML + CSS + bootstrap + Javascript</p>
-          <p class="description">A theme for a dentist website</p>
-          <div class="live" onclick="window.open('http://dentohome.netlify.app/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project">
-          <h3>Memory Game</h3>
-          <p>HTML + CSS + Javascript</p>
-          <p class="description">A game that helps increase the retention of a person</p>
-          <div class="live" onclick="window.open('https://memory-game-aa.netlify.app/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project">
-          <h3>PixelArt Maker</h3>
-          <p>HTML + CSS + Javascript</p>
-          <p class="description">A plaform for creating Artistic paintings</p>
-          <div class="live" onclick="window.open('https://pixelart-make-aa.netlify.app/','_blank')"><a></a>LIVE</div>
-        </div>
-        <!--project -->
-        <div class="project">
-          <h3>Chatbot</h3>
-          <p>HTML + CSS + Javascript</p>
-          <p class="description">A chatbot that helps aid customer services</p>
-          <div class="live" onclick="window.open('https://chatbot-anita.netlify.app/','_blank')"><a></a>LIVE</div>
+
+    <div class="skill_work_section">
+      <!--section that shows my skillset-->
+      <div class="skill_section">
+        <h1>My Skillset</h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/html.svg"/><h3>HTML<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/css.svg"/><h3>CSS<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/bootstrap.svg"/><h3>Bootstrap<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/sass.svg"/><h3>Sass<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/javascript.svg"/><h3>Javascript<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/jquery.svg"/><h3>Jquery<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/react.svg"/><h3>React.js<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/vue.svg"/><h3>Vue.js<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/python.svg"/><h3>Python<h3/></div>
+            <div class="swiper-slide"><img src="assets/img/github_skill.svg"/><h3>Git<h3/></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <h1>Lets form an alliance that makes a difference</h1>
-      <p class="get_in_touch">If you have any questions or want to collaboarte, you can <a href="connect.html">get in touch.</a></p>
+      <!--My work section -->
+      <div class="mywork_section">
+        <h1>Check out some of my works</h2>
+        <div class="work_container">
+          <!--project -->
+          <div class="project">
+            <h3>Wi-share</h3>
+            <p>HTML + CSS + Javascript</p>
+            <p class="description">A mobile's app landing page</p>
+            <div class="live" onclick="window.open('https://wi-share.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project"><h3>MicroApi</h3>
+            <p>HTML + Sass + Javascript</p>
+            <p class="description">A platform that provides micro services</p>
+            <div class="live" onclick="window.open('https://microapi.dev/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project"><h3>Ideaco</h3>
+            <p>HTML + Sass + Javascript + Vue.js</p>
+            <p class="description">A platform that allows an organisation to manage their ideas effectively</p>
+            <div class="live" onclick="window.open('http://idea-co.herokuapp.com/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project">
+            <h3>Arcade Game</h3>
+            <p>HTML + CSS + Javascript</p>
+            <p class="description">A fun to play game</p>
+            <div class="live" onclick="window.open('https://herro-game.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project">
+            <h3>Envato</h3>
+            <p>HTML + CSS + bootstrap + Javascript</p>
+            <p class="description">A theme for a dentist website</p>
+            <div class="live" onclick="window.open('http://dentohome.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project">
+            <h3>Memory Game</h3>
+            <p>HTML + CSS + Javascript</p>
+            <p class="description">A game that helps increase the retention of a person</p>
+            <div class="live" onclick="window.open('https://memory-game-aa.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project">
+            <h3>PixelArt Maker</h3>
+            <p>HTML + CSS + Javascript</p>
+            <p class="description">A plaform for creating Artistic paintings</p>
+            <div class="live" onclick="window.open('https://pixelart-make-aa.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+          <!--project -->
+          <div class="project">
+            <h3>Chatbot</h3>
+            <p>HTML + CSS + Javascript</p>
+            <p class="description">A chatbot that helps aid customer services</p>
+            <div class="live" onclick="window.open('https://chatbot-anita.netlify.app/','_blank')"><a></a>LIVE</div>
+          </div>
+        </div>
+        <h1>Lets form an alliance that makes a difference</h1>
+        <p class="get_in_touch">If you have any questions or want to collaboarte, you can <a href="connect.html">get in touch.</a></p>
+      </div>
     </div>
+
+    <!--Resume container section-->
+    <div class="resume_body">
+      <div class="resume_header">
+        <img src="assets/img/CV_Summary.svg" class="summary_icon"/>
+        <img src="assets/img/cancel_icon.svg" class="cancel_icon" onclick="close_resume()"/>
+      </div>
+      
+      <!--experience section -->
+      <div class="experience_section">
+        <h3>EXPERIENCE</h3><br>
+        <ul>
+          <li>
+            Internship with HNG Internship, I worked on some projects such as creating web themes for Envato, 
+            MicropApi, and IDEACO, these projects are startup projects which are expected to be released to the market 
+            very soon, this internship was an eye-opener for me, it taught me a lot of things which include how to
+             approach problems, improved my team skills, ability to work on under pressure (June to August 2020).
+          </li><br>
+          <li>
+            Internship with Airtel Network Limited, I was responsible for the allocation of IP Addresses, monitoring 
+            of cache servers, assisted in designing and documentation of networks, network debugging, and maintenance.
+             Although this is not a frontend developer's work but this as added to my knowledge and understanding of 
+             networking.
+          </li><br>
+          <li>
+            Worked with a startup company named Hiosoft technology, I was responsible for developing the frontend 
+            interface for some of their projects such as BJ farms mobile application with the use of Onsen UI, 
+            Hiosoft chatbot to help give a better experience to customers and I also contributed in the building 
+            of Hiosoft e-learning website known as Codeside Academy. Some of these products made me understood and 
+            broadened my knowledge of APIs (February to June 2019).
+          </li><br>
+          <li>
+            Internship with Harmony innovation hub, helped in the maintenance of their e-learning website 
+            (January to February 2019). 
+          </li>
+        </ul>
+      </div>
+      <!--skill section -->
+      <div class="education_section">
+        <h3>SKILLS</h3><br>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+          <li>Sass</li>
+          <li>Jquery</li>
+          <li>React.js</li>
+          <li>Python</li>
+          <li>Git/Github</li>
+        </ul>
+      </div>
+      <!--education section -->
+      <div class="education_section">
+        <h3>EDUCATION</h3><br>
+        <ul>
+          <li>Currently a final year student in Federal University of Technology Minna in the department of
+           Telecommunication Engineering.</li><br>
+          <li>Udacity (Nanodegree in Front-end web development).</li>
+        </ul>
+      </div>
+      <!--achievement section -->
+      <div class="achievement_section">
+        <h3>ACHIEVEMENTS AND AWARDS</h3><br>       
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>I made it to the Finalist during HNGi7 internship (2020).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Nanodegree in front-end web development from Udacity (2018).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Google African scholar offered a Nanodegree in Front-end web development at Udacity (2018).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Proficient in JavaScript from Pluralsight (2018).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Certificate of completion from Andela learning community for Google African scholarship course (2018).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Certification in Huawei certified network associate (HCNA) in 2018.</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Certificate of completion in entrepreneurship from HP LIFE (2018).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Best science student in secondary school (2015).</p>
+        </div>
+        <div class="achievement">
+          <img src="assets/img/Star.svg"/>
+          <p>Best in Mathematics, Physics and Further Mathematics in secondary school (2015).</p>
+        </div>
+      </div>
+      <div class="download_resume">
+        <a href="https://drive.google.com/file/d/1vovlVe96kvRlVd5u8rDats73z_DDhyht/view?usp=sharing" target="_blank">Download Resume</a>
+      </div>
+    </div>
+    
   </div>
 
   <!--footer section -->
@@ -171,9 +280,6 @@
         el: '.swiper-pagination',
       },
     });
-    function scrollToTop() {
-      document.querySelector('.mywork_section').scrollIntoView(true); // Top
-    }
   </script>
   <script src="assets/js/nav.js"></script>
 </body>
