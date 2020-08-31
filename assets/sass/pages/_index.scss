@@ -11,12 +11,12 @@ header{
         display: none;
     }
     nav{
-        width: 300px;
+        width: 280px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         a{
-            font-size:20px;
+            font-size:18px;
             color: $primary-color !important;
             cursor: pointer;
             &:hover{
@@ -41,7 +41,7 @@ header{
     z-index: 10;
     a{
         color:$primary-color !important;
-        font-size: 20px;
+        font-size: 18px;
         margin:20px auto;
         display: block;
     }
@@ -72,7 +72,7 @@ header{
                 margin-bottom: 20px;
             }
             p{
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         &__2{
@@ -84,7 +84,7 @@ header{
     .mycv_section{
         color: $primary-color !important;
         p{
-            font-size:20px;
+            font-size:18px;
             a{
                 color:$secondary-color !important;
                 cursor: pointer;
@@ -107,7 +107,7 @@ header{
                 }
             }
             a{
-                font-size:20px;
+                font-size:18px;
                 color: $secondary-color !important;
                 margin-left: 10px;
                 cursor: pointer;
@@ -130,8 +130,8 @@ header{
         .swiper-slide {
             background-position: center;
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 270px;
+            height: 270px;
             border:1px solid $secondary-color;
             text-align: center;
             padding-top: 20px;
@@ -144,6 +144,7 @@ header{
                 margin: auto;
                 left: 0;
                 right: 0;
+                font-size: 1.5rem;
             }
         }
         .swiper-pagination-bullet{
@@ -173,7 +174,7 @@ header{
                 }
                 .description{
                     margin-top:30px;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
                 .live{
                     position: absolute;
@@ -205,7 +206,7 @@ header{
         }
         /*get in touch section*/
         .get_in_touch{
-            font-size:20px;
+            font-size:18px;
             a{
                 color:$secondary-color;
                 cursor: pointer;
@@ -289,7 +290,7 @@ footer{
     background:$tetiary-color;
     p{
         color: $primary-color;
-        font-size: 22px;
+        font-size: 20px;
     }
     .social_links{
         margin:50px 0px;
@@ -404,7 +405,7 @@ footer{
                 p{
                     font-size:15px;
                 }   
-                h1{
+                h2{
                     font-size:20px;
                 }
             }
@@ -429,7 +430,7 @@ footer{
             }
         }
         .skill_section{
-            h1{
+            h2{
                 font-size: 20px;
             }
             .swiper-slide{
@@ -441,7 +442,7 @@ footer{
             }
         }
         .mywork_section{
-            h1{
+            h2{
                 font-size: 20px;
             }
             .work_container .project{
@@ -510,7 +511,7 @@ footer{
             }
         }
         p{
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }
